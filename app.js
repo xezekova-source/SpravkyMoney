@@ -172,20 +172,31 @@
   }, { rootMargin: '-35% 0px -60% 0px', threshold: 0 });
   screens.forEach(screen => activeObserver.observe(screen));
 
-  $('.manifesto-reserve').textContent = window.keepWordsTogether($('.manifesto-reserve').textContent);
-  const quote = $('.manifesto-reserve').textContent;
+  const ideaReserve = $('#idea .manifesto-reserve');
+  ideaReserve.textContent = window.keepWordsTogether(ideaReserve.textContent);
+  const quote = ideaReserve.textContent;
   const quoteTyping = new window.TextType($('#typed-manifesto'), {
     text: quote, typingSpeed: 75, deletingSpeed: 50, speedMultiplier: 3, typeEffect: 'fade', mistakes: .2,
     showCursor: true, cursorStyle: 'bar', cursorGlide: true, loop: false, reducedMotion: reduceMotion.matches,
     highlightedPhrases: ['справки приносили дополнительный доход банку', 'увеличения полезных функций', 'без урезания'],
   });
   function typeManifesto() { quoteTyping.start(); }
+  const pilotReserve = $('#pilot-reserve');
+  pilotReserve.textContent = window.keepWordsTogether(pilotReserve.textContent);
+  const pilotTyping = new window.TextType($('#typed-pilot'), {
+    text: pilotReserve.textContent, typingSpeed: 75, deletingSpeed: 50, speedMultiplier: 3, typeEffect: 'fade', mistakes: .2,
+    showCursor: true, cursorStyle: 'bar', cursorGlide: true, loop: false, reducedMotion: reduceMotion.matches,
+    highlightedPhrases: ['доход покрывает затраты', 'разработка окупится в согласованный срок', 'не должны ухудшиться'],
+  });
   const counterTarget = Math.round(totalAnnualProfit / 1e6);
   const multiplier = $('.goal-multiplier');
   const goalUnit = $('.goal-unit');
   const growthRatio = Math.round(counterTarget / 20 * 10) / 10;
   const growthWord = ['few', 'other'].includes(new Intl.PluralRules('ru').select(growthRatio)) ? 'раза' : 'раз';
-  multiplier.textContent = `К ${data.context.targetYear} году увеличить прибыль в ${new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 }).format(growthRatio)} ${growthWord}`;
+  const additionalProfitWord = document.createElement('span');
+  additionalProfitWord.className = 'goal-accent';
+  additionalProfitWord.textContent = 'дополнительную';
+  multiplier.replaceChildren(`К ${data.context.targetYear} году увеличить `, additionalProfitWord, ` прибыль в ${new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 }).format(growthRatio)} ${growthWord}`);
   let counterTimer = null, counterFrame = null, counterVisible = false;
   function showMultiplier(visible) {
     for (const part of [multiplier, goalUnit]) {
@@ -229,6 +240,7 @@
     for (const entry of entries) if (entry.isIntersecting) {
       entry.target.classList.add('is-revealed');
       if (entry.target.closest('.screen').id === 'idea') typeManifesto();
+      if (entry.target.closest('.screen').id === 'pilot') pilotTyping.start();
       revealObserver.unobserve(entry.target);
     }
   }, { threshold: .2 });
@@ -257,10 +269,16 @@
 
   window.polishTypography(document.body);
 
-  if (reduceMotion.matches) { quoteTyping.start(); paintCounter(counterTarget, 1); showMultiplier(true); }
+  if (reduceMotion.matches) { quoteTyping.start(); pilotTyping.start(); paintCounter(counterTarget, 1); showMultiplier(true); }
 
   if (location.hash) {
     const index = screens.findIndex(screen => '#' + screen.id === location.hash);
     if (index >= 0) { activeScreen = index; screens[index].scrollIntoView({ behavior: 'instant', block: 'start' }); }
   }
+  const backToTop = $('#back-to-top');
+  function updateBackToTop() { backToTop.hidden = window.scrollY < innerHeight * .45; }
+  backToTop.addEventListener('click', () => { goTo(0); backToTop.blur(); });
+  addEventListener('scroll', updateBackToTop, { passive: true });
+  addEventListener('resize', updateBackToTop, { passive: true });
+  updateBackToTop();
 })();

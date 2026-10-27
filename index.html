@@ -8,7 +8,7 @@
   <title>Развитие платных функций в справках</title>
   <link rel="icon" href="assets/paper.svg" type="image/svg+xml">
   <link rel="preload" href="assets/inter-variable.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261027-15">
+  <link rel="stylesheet" href="styles.css?v=20261027-19">
   <link rel="stylesheet" href="bento.css?v=20261027-10">
   <script src="presentation-data.js?v=20261027-10" defer></script>
   <script src="typography.js?v=20261027-10" defer></script>
@@ -17,7 +17,7 @@
   <script src="redesign-comparison.js?v=20261027-15" defer></script>
   <script src="document-motion.js?v=20261027-10" defer></script>
   <script src="elastic-ending.js?v=20261027-10" defer></script>
-  <script src="app.js?v=20261027-15" defer></script>
+  <script src="app.js?v=20261027-19" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#cover">К содержанию</a>
@@ -77,7 +77,7 @@
         <div class="section-head centered"><h2 id="context-heading">Справки</h2><p class="lead">У тебя может не быть кредита, но справку ты брал.</p></div>
         <div class="context-stats">
           <div class="stat"><div class="stat-number">5<span class="stat-unit">млн</span></div><p>справок выдано<br>за девять месяцев</p></div>
-          <div class="stat"><div class="stat-number">11,25<span class="stat-unit">%</span></div><p>расчётная доля<br>нетиповых справок</p></div>
+          <div class="stat"><div class="stat-number">11,25<span class="stat-unit">%</span></div><p>расчётная доля<br>платных справок</p></div>
           <div class="stat"><div class="stat-number">≈21<span class="stat-unit">млн ₽</span></div><p>выручка<br>за те же девять месяцев</p></div>
         </div>
       </div>
@@ -87,7 +87,7 @@
       <div class="wrap centered reveal">
         <h2 id="goal-heading">Что я хочу сделать</h2>
         <div class="goal-display" role="group" aria-label="Годовая прибыль до налогов к 2030 году"><span id="goal-counter">20</span><span class="goal-unit" aria-hidden="true">млн ₽</span></div>
-        <p class="goal-multiplier" aria-hidden="true">К 2030 году увеличить прибыль в 4 раза</p>
+        <p class="goal-multiplier" aria-hidden="true">К 2030 году увеличить <span class="goal-accent">дополнительную</span> прибыль в 4 раза</p>
       </div>
     </section>
 
@@ -129,10 +129,10 @@
       <div class="wrap reveal">
         <div class="section-head centered"><h2 id="commit-heading">Commit на 2027 год</h2></div>
         <ul class="commit-checklist">
+          <li><span class="empty-check" aria-hidden="true"></span><p>Зафиксировать владельцев и критерии успеха каждого направления.</p></li>
+          <li><span class="empty-check" aria-hidden="true"></span><p>Провести глубокую аналитику и исследование по всем инициативам.</p></li>
           <li><span class="empty-check" aria-hidden="true"></span><p>Внедрить обновлённое оформление справок.</p></li>
           <li><span class="empty-check" aria-hidden="true"></span><p>Запустить приоритетную справку, платные повторы<br>и бумажную выдачу.</p></li>
-          <li><span class="empty-check" aria-hidden="true"></span><p>Спроектировать общий сценарий сочетания услуг.</p></li>
-          <li><span class="empty-check" aria-hidden="true"></span><p>Зафиксировать владельцев и критерии успеха каждого направления.</p></li>
         </ul>
       </div>
     </section>
@@ -141,6 +141,12 @@
       <div class="wrap reveal">
         <div class="section-head"><h2 id="timeline-heading">Timeline на 2027 год</h2></div>
         <div class="table-wrap"><table class="timeline-table"><thead><tr><th scope="col">Направление</th><th scope="col">I квартал</th><th scope="col">II квартал</th><th scope="col">III квартал</th><th scope="col">IV квартал</th></tr></thead><tbody id="timeline-rows"></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="screen manifesto-screen" id="pilot" aria-label="Условия масштабирования пилота">
+      <div class="wrap centered reveal">
+        <p class="manifesto" aria-label="Масштабируем, если пилот подтверждает спрос по предложенной цене и показывает, что доход покрывает затраты, а разработка окупится в согласованный срок. При этом сроки обычных справок и доля жалоб не должны ухудшиться."><span class="manifesto-reserve" id="pilot-reserve" aria-hidden="true">Масштабируем, если пилот подтверждает спрос по предложенной цене и показывает, что доход покрывает затраты, а разработка окупится в согласованный срок. При этом сроки обычных справок и доля жалоб не должны ухудшиться.</span><span id="typed-pilot" aria-hidden="true"></span></p>
       </div>
     </section>
 
@@ -164,5 +170,6 @@
     </section>
   </main>
   <div id="flying-document" class="flying-document" aria-hidden="true"><img src="assets/green-document.png" width="2611" height="2611" alt=""></div>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Вернуться к началу" title="В начало" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
 </body>
 </html>
