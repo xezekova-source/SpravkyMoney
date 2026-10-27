@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <title>Комплект документов</title>
+  <g stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 26h44v59H14z" fill="#000"/>
+    <path d="M25 18h44v59H25z" fill="#fff"/>
+    <path d="M36 10h29l16 16v44H36z" fill="#fff"/>
+    <path d="M65 10v16h16" fill="#000"/>
+    <path d="M47 37h23M47 47h23M47 57h15"/>
+  </g>
+</svg>

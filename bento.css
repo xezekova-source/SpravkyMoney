@@ -1,0 +1,90 @@
+/* Eight independent media tiles; geometry and crops follow Figma 928:19325. */
+.portfolio-bento {
+  position: relative;
+  width: min(100%, calc((100svh - 96px) * 1.7777778));
+  aspect-ratio: 1872 / 1053;
+  margin-inline: auto;
+  container-type: inline-size;
+}
+.portfolio-bento .portfolio-tile {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 2.083333cqw;
+  background: #f2f4f3;
+  isolation: isolate;
+}
+.portfolio-bento img,
+.portfolio-bento video {
+  position: absolute;
+  display: block;
+  max-width: none;
+  object-fit: fill;
+  pointer-events: none;
+}
+.portfolio-navbar { left: 1.666667%; top: 2.962963%; width: 36.275908%; height: 29.351852%; }
+.portfolio-bento .portfolio-pay { left: 39.609241%; top: 2.962963%; width: 36.275908%; height: 29.351852%; background: #1b1b1b; }
+.portfolio-award { left: 1.666667%; top: 35.278253%; width: 16.041667%; height: 61.666667%; }
+.portfolio-phones { left: 19.375%; top: 35.370370%; width: 33.072917%; height: 61.666667%; }
+.portfolio-terminal { left: 54.114316%; top: 35.370370%; width: 21.770833%; height: 29.351852%; }
+.portfolio-app { left: 77.551816%; top: 2.962963%; width: 20.78125%; height: 61.759259%; }
+.portfolio-portrait { left: 54.114316%; top: 67.685660%; width: 26.024466%; height: 29.351852%; }
+.portfolio-bento .portfolio-folder { left: 81.805449%; top: 67.685660%; width: 16.527618%; height: 29.351852%; background: #f2f3f3; }
+.bento-navbar-clip {
+  position: absolute;
+  left: calc(38.03 / 679.085 * 100%);
+  top: calc(94.57 / 309.075 * 100%);
+  width: calc(557.7 / 679.085 * 100%);
+  height: calc(119.925 / 309.075 * 100%);
+  overflow: hidden;
+  border-radius: 2.135417cqw;
+}
+.portfolio-bento .bento-navbar-video { left: -22.517646%; top: -75.038600%; width: 145.035296%; height: 250.077208%; }
+.portfolio-bento .bento-pay-video {
+  left: calc((679.085 / 2 + .54 - 269.09555 / 2) / 679.085 * 100%);
+  top: calc(26.4 / 309.075 * 100%);
+  width: calc(269.09555 / 679.085 * 100%);
+  height: calc(493.598114 / 309.075 * 100%);
+}
+.portfolio-bento .portfolio-award img {
+  left: calc(-103.2 / 300.3 * 100%);
+  top: calc(-12.98 / 649.35 * 100%);
+  width: calc(507 / 300.3 * 100%);
+  height: calc(676.251 / 649.35 * 100%);
+}
+.portfolio-bento .portfolio-phones img {
+  left: calc((619.125 / 2 - .49 - 649.35 / 2) / 619.125 * 100%);
+  top: 0;
+  width: calc(649.35 / 619.125 * 100%);
+  height: 100%;
+}
+.portfolio-bento .bento-terminal-video {
+  left: calc((407.55 / 2 - .97 - 323.7 / 2) / 407.55 * 100%);
+  top: calc((309.075 / 2 + .49 - 323.7 / 2) / 309.075 * 100%);
+  width: calc(323.7 / 407.55 * 100%);
+  height: calc(323.7 / 309.075 * 100%);
+  mix-blend-mode: darken;
+}
+.portfolio-bento .portfolio-app img {
+  left: calc(64.22 / 389.025 * 100%);
+  top: calc(48.3 / 650.325 * 100%);
+  width: calc(260 / 389.025 * 100%);
+  height: calc(603 / 650.325 * 100%);
+}
+.portfolio-bento .portfolio-portrait img {
+  left: calc(-20.02 / 487.178 * 100%);
+  top: calc(-110.23 / 309.075 * 100%);
+  width: calc(529 / 487.178 * 100%);
+  height: calc(529 / 309.075 * 100%);
+}
+.bento-folder-clip {
+  position: absolute;
+  left: calc((309.397 / 2 - .06 - 305.375366 / 2) / 309.397 * 100%);
+  top: calc(13.98 / 309.075 * 100%);
+  width: calc(305.375366 / 309.397 * 100%);
+  height: calc(279.64151 / 309.075 * 100%);
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+.portfolio-bento .bento-folder-video { left: -17.696630%; top: -23.926380%; width: 135.393256%; height: 147.852757%; }

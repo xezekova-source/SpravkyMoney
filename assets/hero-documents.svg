@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" fill="none">
+  <title>Справки и новые возможности</title>
+  <g stroke="#242423" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M74 166 95 140h217l27 26v115c0 9-7 16-16 16H86c-9 0-16-7-16-16V180c0-5 1-10 4-14Z" fill="#FFFFFF"/>
+    <path d="M91 140h221l20 24H75l16-24Z" fill="#EDF3EC"/>
+    <path d="M130 155V59c0-5 4-9 9-9h115l32 32v73" fill="#FFFFFF"/>
+    <path d="M254 50v31h32"/>
+    <path d="M151 78h59m-59 16h85m-85 16h60"/>
+    <path d="M249 119c-8-5-18-3-22 5-5 10 1 20 12 21 9 1 18-5 18-14"/>
+    <path d="m232 129 7 7 16-19"/>
+    <path d="M87 184h237m-228 0v74m216-74v74"/>
+    <path d="M111 199h25m143 0h12"/>
+    <circle cx="305" cy="199" r="2.8" fill="#242423" stroke="none"/>
+    <path d="M120 229h174v52H120z" fill="#EDF3EC"/>
+    <path d="M139 243h136v88H139z" fill="#FFFFFF"/>
+    <path d="M154 260h74m-74 13h103m-103 13h63"/>
+    <path d="M155 310c8-11 9-12 8-1 5-3 9-6 12-4 6 3 11 3 21-1"/>
+    <circle cx="246" cy="308" r="12"/>
+    <path d="m241 308 4 4 7-9"/>
+    <path d="M331 168 391 155l37 21 18 93-91 19-24-120Z" fill="#FFFFFF"/>
+    <path d="m391 155 6 29 31-8m-77 20 29-6m-25 22 53-11m-50 26 53-11m-50 26 33-7"/>
+    <path d="M367 268c7-8 11-8 12-2 6-6 11-7 17-7"/>
+    <path d="M351 313c0 19-15 34-34 34s-34-15-34-34 15-34 34-34 34 15 34 34Z" fill="#FBF3DB"/>
+    <path d="M311 330v-35h11c13 0 14 17 0 17h-19m0 8h23"/>
+    <path d="M405 324c0 15-12 27-27 27s-27-12-27-27 12-27 27-27 27 12 27 27Z" fill="#FBF3DB"/>
+    <path d="M374 337v-27h8c10 0 10 13 0 13h-14m0 6h18"/>
+    <path d="m351 63 4 10m14 1-8 5m-13 6-10 2M54 243l-10 4m12 9-5 8"/>
+  </g>
+</svg>

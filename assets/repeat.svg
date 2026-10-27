@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <title>Дополнительные экземпляры</title>
+  <g stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 22h39v55H13z" fill="#000"/>
+    <path d="M23 12h29l14 14v41H23z" fill="#fff"/>
+    <path d="M52 12v14h14" fill="#000"/>
+    <path d="M33 36h22M33 46h14"/>
+    <path d="M43 65a21 21 0 0 1 37-9M82 73a21 21 0 0 1-37 9" stroke="#fff" stroke-width="11"/>
+    <path d="M43 65a21 21 0 0 1 37-9M82 73a21 21 0 0 1-37 9" stroke-width="5"/>
+    <path d="M80 46v12H68M45 91V79h12" stroke-width="5"/>
+  </g>
+</svg>
